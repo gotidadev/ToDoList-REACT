@@ -2,6 +2,10 @@
 
 Uma aplicação de **lista de tarefas desenvolvida com React**, criada para praticar os principais conceitos da biblioteca e entender melhor a construção de interfaces utilizando componentes e estados.
 
+## 🌐 Demo
+
+[🚀 Acessar o Todo List](https://to-do-list-react-fawn-nu.vercel.app/) 
+
 ## 🚀 Tecnologias
 
 * ⚛️ **React**
