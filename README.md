@@ -1,78 +1,92 @@
-# React + TypeScript + Vite
+# 📝 Todo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação de **lista de tarefas desenvolvida com React**, criada para praticar os principais conceitos da biblioteca e entender melhor a construção de interfaces utilizando componentes e estados.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* ⚛️ **React**
+* 🟨 **JavaScript**
+* 🎨 **CSS**
+* 📦 **Vite**
+* 🌐 **HTML**
 
-## React Compiler
+## ✨ Funcionalidades
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+* ➕ Adicionar novas tarefas
+* ✅ Marcar tarefas como concluídas
+* 🗑️ Remover tarefas
+* 📋 Exibir tarefas dinamicamente
+* 🔄 Atualização da interface em tempo real
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## ⚛️ Conceitos utilizados
 
-## Expanding the ESLint configuration
+Durante o desenvolvimento, coloquei em prática conceitos importantes do React:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Componentização
+* `useState`
+* Props
+* Eventos
+* Renderização de listas
+* Renderização condicional
+* Comunicação entre componentes
+* Atualização dinâmica da interface
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📂 Estrutura do projeto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```text
+src/
+├── components/
+│   ├── FormList.jsx
+│   └── ItemList.jsx
+│
+├── pages/
+│   └── home/
+│       ├── App.jsx
+│       └── App.css
+│
+├── index.css
+└── main.jsx
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### 📁 Components
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+A pasta `components` contém os componentes reutilizáveis da aplicação.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* **FormList.jsx** — responsável pelo formulário utilizado para adicionar novas tarefas.
+* **ItemList.jsx** — responsável pela exibição e gerenciamento individual dos itens da lista.
 
-```
+### 📁 Pages
+
+A pasta `pages` organiza as páginas da aplicação.
+
+* **home/App.jsx** — componente principal da página inicial.
+* **home/App.css** — estilos específicos da página inicial.
+
+### 🎨 Estilos
+
+* **index.css** — estilos globais da aplicação.
+* **App.css** — estilos específicos da página Home.
+
+### ⚙️ main.jsx
+
+É o ponto de entrada da aplicação React, responsável por renderizar o componente principal no DOM.
+
+## 🎯 Objetivo
+
+O objetivo deste projeto foi **aprender e praticar React na prática**, saindo do JavaScript tradicional e utilizando uma estrutura baseada em componentes.
+
+Além de criar um Todo List funcional, o projeto serviu para entender melhor como o React trabalha com **estado, eventos, componentes e atualização da interface**.
+
+## 📚 Aprendizados
+
+Com este projeto, pratiquei:
+
+> Como transformar uma interface tradicional em uma aplicação baseada em componentes React.
+
+Também foi uma oportunidade para entender melhor como organizar um projeto React e separar responsabilidades entre seus componentes.
+
+## 👨‍💻 Autor
+
+**Tiago Oliveira da Cunha**
+
+Desenvolvedor Full Stack interessado em **React, Node.js e desenvolvimento web**.
