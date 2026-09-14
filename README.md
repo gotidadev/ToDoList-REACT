@@ -1,57 +1,92 @@
 # 📝 Todo List
 
-Um **Todo List** desenvolvido com **React**, criado para praticar os principais conceitos da biblioteca e desenvolver uma aplicação simples, funcional e organizada.
+Uma aplicação de **lista de tarefas desenvolvida com React**, criada para praticar os principais conceitos da biblioteca e entender melhor a construção de interfaces utilizando componentes e estados.
 
 ## 🚀 Tecnologias
 
 * ⚛️ **React**
 * 🟨 **JavaScript**
 * 🎨 **CSS**
-* 🌐 **HTML**
 * 📦 **Vite**
-
-## 🎯 Sobre o projeto
-
-O projeto permite criar e gerenciar uma lista de tarefas de forma simples.
-
-A aplicação foi desenvolvida com **React**, utilizando componentes e gerenciamento de estado para atualizar a interface de acordo com as ações do usuário.
+* 🌐 **HTML**
 
 ## ✨ Funcionalidades
 
-* ➕ Adicionar tarefas
-* 🗑️ Remover tarefas
+* ➕ Adicionar novas tarefas
 * ✅ Marcar tarefas como concluídas
-* 📋 Listar tarefas
-* 🔄 Atualização dinâmica da interface
+* 🗑️ Remover tarefas
+* 📋 Exibir tarefas dinamicamente
+* 🔄 Atualização da interface em tempo real
 
-## ⚛️ Conceitos de React utilizados
+## ⚛️ Conceitos utilizados
 
-Durante o desenvolvimento, foram praticados conceitos fundamentais do React, como:
+Durante o desenvolvimento, coloquei em prática conceitos importantes do React:
 
-* **Componentes**
-* **Props**
-* **useState**
-* **Renderização de listas**
-* **Eventos**
-* **Renderização condicional**
-* **Comunicação entre componentes**
+* Componentização
+* `useState`
+* Props
+* Eventos
+* Renderização de listas
+* Renderização condicional
+* Comunicação entre componentes
+* Atualização dinâmica da interface
 
-## 📂 Estrutura
+## 📂 Estrutura do projeto
 
 ```text
 src/
 ├── components/
-│   ├── FormList/
-│   ├── List/
-│   └── ListItem/
+│   ├── FormList.jsx
+│   └── ItemList.jsx
 │
-├── App.jsx
-├── main.jsx
-└── index.css
+├── pages/
+│   └── home/
+│       ├── App.jsx
+│       └── App.css
+│
+├── index.css
+└── main.jsx
 ```
 
-A aplicação foi dividida em componentes para manter o código mais organizado e facilitar futuras alterações.
+### 📁 Components
 
-## 💡 Objetivo
+A pasta `components` contém os componentes reutilizáveis da aplicação.
 
-Este projeto faz parte do meu aprendizado em **React** e foi desenvolvido para colocar em prática conceitos fundamentais da biblioteca através de uma aplicação r
+* **FormList.jsx** — responsável pelo formulário utilizado para adicionar novas tarefas.
+* **ItemList.jsx** — responsável pela exibição e gerenciamento individual dos itens da lista.
+
+### 📁 Pages
+
+A pasta `pages` organiza as páginas da aplicação.
+
+* **home/App.jsx** — componente principal da página inicial.
+* **home/App.css** — estilos específicos da página inicial.
+
+### 🎨 Estilos
+
+* **index.css** — estilos globais da aplicação.
+* **App.css** — estilos específicos da página Home.
+
+### ⚙️ main.jsx
+
+É o ponto de entrada da aplicação React, responsável por renderizar o componente principal no DOM.
+
+## 🎯 Objetivo
+
+O objetivo deste projeto foi **aprender e praticar React na prática**, saindo do JavaScript tradicional e utilizando uma estrutura baseada em componentes.
+
+Além de criar um Todo List funcional, o projeto serviu para entender melhor como o React trabalha com **estado, eventos, componentes e atualização da interface**.
+
+## 📚 Aprendizados
+
+Com este projeto, pratiquei:
+
+> Como transformar uma interface tradicional em uma aplicação baseada em componentes React.
+
+Também foi uma oportunidade para entender melhor como organizar um projeto React e separar responsabilidades entre seus componentes.
+
+## 👨‍💻 Autor
+
+**Tiago Oliveira da Cunha**
+
+Desenvolvedor Full Stack interessado em **React, Node.js e desenvolvimento web**.
